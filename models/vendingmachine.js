@@ -3,10 +3,10 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 //mongoose connection
- mongoose.connect("mongodb://localhost:27017/activitiesTracker");
+// mongoose.connect("mongodb://localhost:27017/vendingmachine_test");
 
 
-const customersSchema = new Schema({
+const customerSchema = new Schema({
     items: { type: String, required: true},
     cost: Number,
     quantity: Number,
